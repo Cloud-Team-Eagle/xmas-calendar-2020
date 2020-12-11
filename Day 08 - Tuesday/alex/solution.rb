@@ -15,6 +15,13 @@ def BracketMatcher(str)
     end
   }
 
+  if len(stack) != 0
+    return 0
+  end
+  
   return 1
 end
+
+
+
 
