@@ -10,5 +10,4 @@ from os import system
 system('python Day\ 15\ -\ Trees\,\ Trees\,\ Trees/hai/task2.py')
 
 
-
-
+# system('python Day\ 15\ -\ Trees\,\ Trees\,\ Trees/hai/postfix_to_prefix.py')
