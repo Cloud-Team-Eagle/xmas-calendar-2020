@@ -50,25 +50,25 @@ def postfix(root):
 
 
 def infix(root): 
-    visited = set()
     stack = []
+    visited = set()
     stack.append(root)
 
     while stack:
         node = stack.pop()
+        is_leaf = node.right_child == node.right_child == None
+        if is_leaf:
+            print(node.value)
+        else:
+            if node in visited:
+                print(node.value)
+            else:
+                visited.add(node)
+                stack.append(node.right_child)
+                stack.append(node)
+                stack.append(node.left_child)
         
-        left = node.left_child
-        right = node.right_child
-        node_has_children = (left or right)
 
-        if node_has_children:
-            if right and not right in visited:
-                stack.append(right)
-
-            stack.append(node)
-
-            if left and not left in visited:
-                stack.append(left)
 
 
 
